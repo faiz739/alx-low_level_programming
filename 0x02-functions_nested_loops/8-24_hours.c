@@ -4,21 +4,26 @@
  * @n: int type number
  * Return: return value of last digit
  */
-int print_last_digit(int n)
+void jack_bauer(void)
 {
-	int r;
+	int i, j;
 
-	if (n < 0)
+	i = 0;
+
+	while (i < 24)
 	{
-		r = -1 * (n % 10);
-		_putchar(r + '0');
-		return (r);
-	}
-	else
-	{
-		r = n % 10;
-		_putchar(r + '0');
-		return (r);
+		j = 0;
+		while (j < 60)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(':');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
+			_putchar('\n');
+			j++;
+		}
+		i++;
 	}
 }
 
