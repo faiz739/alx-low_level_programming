@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * You are allowed to use the standard library
+ * You are not allowed to modify the variable
+ */
 int main(void)
 {
 	int n;
